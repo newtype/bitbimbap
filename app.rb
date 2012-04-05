@@ -5,6 +5,6 @@ get '/' do
   rand(2) == 1 ? "Heads!" : "Tails!"
 end
 
-get %r{/.*} do
+get /.*/ do
   redirect '/'
 end
